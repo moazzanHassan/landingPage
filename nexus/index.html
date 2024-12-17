@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambassador Page</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.section-1{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1491336477066-31156b5e4f35?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.section-1 .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ffffff5c;
+    backdrop-filter: blur(15px);
+    z-index: 1;
+}
+.section-1 h1{
+    font-size: 10vw;
+    font-family: oswald;
+    font-weight: 500;
+    position: absolute;
+    z-index: 999;
+    left: 2%;
+    text-transform: uppercase;
+    transform: translateY(0);
+    animation-name: up;
+    animation-duration: 1.4s;
+    animation-timing-function: ease;
+
+}
+.cut-text span{
+    color: transparent;
+    -webkit-text-stroke: 3px rebeccapurple
+}
+.section-1 h1:nth-child(3){
+    top: 15vw;
+}
+.text-container:nth-child(2){
+    width: 100%;
+    height: 15vw;
+    overflow: hidden;
+    position: absolute;
+}
+.text-container:nth-child(3){
+    width: 100%;
+    height: 15vw;
+    position: absolute;
+    top: 15vw;
+    overflow-y: hidden;
+}
+@keyframes up {
+    0%{
+        transform: translateY(15vw);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
+  
+
+
+.section-1 p{
+    position: absolute;
+    z-index: 999;
+    top: 33vw;
+    left: 2%;
+    width: 60%;
+    font-size: 20px;
+}
+@media (max-width:500px) {
+    .section-1 p{
+        font-size: 5vw;
+        width: 90%;
+        line-height: 6vw;
+    }
+    .cut-text span{
+        -webkit-text-stroke: 1px rebeccapurple
+    }
+}
+/* ------------------------------ */
+.section-2{
+    width: 100%;
+    min-height: 100%;
+    padding: 2% 2% 0 2%;
+    background-color: #fff;
+}
+.section-2 h1{
+    font-family: "Oswald", sans-serif;
+}
+.section-2 li{
+    font-family: "Lato", sans-serif;
+}
+.eligibility{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    gap: 50px;
+}
+.eligibility .p1{
+    width: 50%;
+}
+.eligibility .p1 h1{
+    font-size: 6vw;
+}
+.eligibility .p2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.eligibility .p2 img{
+    width: 100%;
+    border-radius: 20px;
+    min-width: 300px;
+}
+@media (max-width:500px) {
+    .eligibility{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .eligibility .p1 h1{
+        font-size: 24px;
+    }
+    .eligibility .p1{
+        width: 100%;
+        min-height: 50vh;
+    }
+    .eligibility .p2{
+        width: 100%;
+        min-height: 50vh;
+
+
+    }
+}
+/* -------------- */
+.wt-we-ex{
+    width: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
+    display: flex;
+    gap: 50px;
+}
+.wt-we-ex .p1{
+    width: 50%;
+}
+.wt-we-ex .p1 h1{
+    font-size: 6vw;
+    text-align: end;
+}
+.wt-we-ex .p2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wt-we-ex .p2 img{
+    width: 100%;
+    border-radius: 20px;
+    min-width: 300px;
+
+}
+@media (max-width:500px) {
+    .wt-we-ex{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .wt-we-ex .p1{
+        width: 100%;
+        min-height: 50vh;
+
+    }
+    .wt-we-ex .p1 h1{
+    text-align: start;
+    font-size: 24px;
+    }
+    .wt-we-ex .p2{
+        width: 100%;
+        min-height: 50vh;
+
+    }
+}
+/* --------------------------------- */
+.bnfi{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    gap: 50px;
+}
+.bnfi .p1{
+    width: 50%;
+}
+.bnfi .p1 h1{
+    font-size: 6vw;
+}
+.bnfi .p2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bnfi .p2 img{
+    width: 100%;
+    border-radius: 20px;
+    min-width: 300px;
+
+}
+@media (max-width:500px) {
+    .bnfi{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .bnfi .p1{
+        width: 100%;
+        min-height: 50vh;
+
+    }
+    .bnfi .p1 h1{
+        font-size: 24px;
+    }
+    .bnfi .p2{
+        width: 100%;
+        min-height: 50vh;
+
+    }
+    .section-2{
+        overflow-x: hidden;
+    }
+}
+.section-2 ul li{
+    list-style: none;
+    width: 100%;
+    border-radius: 20px;
+    min-height: 5vw;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.151);
+    border-bottom:2px solid rgb(153, 42, 153);
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+    <section class="section-1">
+        <div class="overlay"></div>
+        <div class="text-container"><h1 class="cut-text">Be A Global </h1></div> <div class="text-container"><h1 class="cut-text"><span>Nexus</span> Ambassador</h1></div>
+        <p>Become a Nexus Ambassador and drive global change by advancing the UN Sustainable Development Goals (SDGs) and shaping impactful public policies. Join a dynamic network of leaders, amplify your voice, and lead initiatives that create meaningful, sustainable change worldwide. Apply today to collaborate on transformative projects and be a catalyst for progress with Nexus!</p>
+    </section>
+    <section class="section-2">
+        <div class="eligibility">
+            <div class="p1">
+                <h1 id="eli">Eligibility</h1>
+                <ul>
+                    <li>Young people aged over 16 years old.</li>
+                    <li>Determined to achieve UN Sustainable development goals.</li>
+                    <li>Vibrant, Proficient and broad-minded young individuals.</li>
+                </ul>
+            </div>
+            <div class="p2">
+                <img src="https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+        <div class="wt-we-ex">
+            <div class="p2">
+                <img src="img/nexus-eligible.webp" alt="">
+            </div>
+            <div class="p1">
+                <h1 id="wtw">What we expect from you?</h1>
+                <ul>
+                    <li>You should be able to represent  Nexus Public Policy Institute and spread our mission in your professional network.</li>
+                    <li>You should be capable of explaining your pivotal motivation towards United Nation's Sustainable Development Goals.</li>
+                    <li>You should be skilled enough to explain your biographic and learning experiences in your social engagements.</li>
+                    <li>You should be vibrant and diversified person full of ideas and solutions for Peace building and change.</li>
+                    <li>You should have constructive approach towards the Conflict resolution.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="bnfi">
+            <div class="p1">
+                <h1 id="bnf">Benefits</h1>
+                <ul>
+                    <li>Opportunity to attend Nexus Global Events and represent your country.</li>
+                    <li>Get an opportunity to travel the world for free with Nexus Public Policy Institute.</li>
+                    <li>Chance to meet Inspirational and diverse Youth across the globe.</li>
+                    <li>Procure way to expand your social network.</li>
+                    <li>Acknowledgement of Global Nexus Ambassador at our Official Website.</li>
+                    <li>Awarded a recognition certificate as Global Nexus Ambassador.</li>
+                </ul>
+            </div>
+            <div class="p2">
+                <img src="https://images.unsplash.com/photo-1499591934245-40b55745b905?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+            </div>
+        </div>
+    </section>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        // Register the ScrollTrigger plugin
+gsap.registerPlugin(ScrollTrigger);
+
+// Basic animation for .section-1 p elements (assuming this is for another section)
+gsap.from(".section-1 p", {
+  scale: .59,
+  delay: 1.4,
+  duration: 1,
+  opacity: 0
+});
+
+// Scroll-triggered animation for the .eligibility section, triggered by #eli
+gsap.from("#eli", {
+    x:50,
+  opacity: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#eli", 
+    start: "top 80%", 
+    end: "bottom 20%", 
+    toggleActions: "play none none none", 
+  }
+});
+
+gsap.from(".eligibility ul li",{
+    x:50,
+    opacity: 0,
+    delay:.5,
+    duration: 2,
+    stagger:.5,
+    scrollTrigger: {
+      trigger: ".eligibility ul li", 
+      start: "top 80%", 
+      end: "bottom 20%", 
+      toggleActions: "play none none none", 
+    scrub:true
+    }
+},["sm"])
+gsap.from(".eligibility .p2 img",{
+    scale:.5,
+    opacity: 0,
+    delay:.5,
+    duration: 2,
+    scrollTrigger: {
+      trigger: ".eligibility ul li", 
+      start: "top 80%", 
+      end: "bottom 20%", 
+      toggleActions: "play none none none", 
+    }
+},["sm"])
+// ----------------------------------------------------
+gsap.from("#wtw", {
+    x:50,
+  opacity: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#wtw", 
+    start: "top 80%", 
+    end: "bottom 20%", 
+    toggleActions: "play none none none", 
+  }
+});
+
+gsap.from(".wt-we-ex ul li",{
+    x:50,
+    opacity: 0,
+    delay:.5,
+    duration: 2,
+    stagger:.5,
+    scrollTrigger: {
+      trigger: ".wt-we-ex ul li", 
+      start: "top 80%", 
+      end: "bottom 20%", 
+      toggleActions: "play none none none", 
+    scrub:true
+    }
+},["sm"])
+gsap.from(".wt-we-ex .p2 img",{
+    scale:.5,
+    opacity: 0,
+    delay:.5,
+    duration: 2,
+    scrollTrigger: {
+      trigger: ".wt-we-ex ul li", 
+      start: "top 80%", 
+      end: "bottom 20%", 
+      toggleActions: "play none none none", 
+    }
+},["sm"])
+// ------------------------------------------------------
+gsap.from("#bnf", {
+    x:50,
+  opacity: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: "#bnf", 
+    start: "top 80%", 
+    end: "bottom 20%", 
+    toggleActions: "play none none none", 
+  }
+});
+
+gsap.from(".bnfi ul li",{
+    x:50,
+    opacity: 0,
+    delay:.5,
+    duration: 2,
+    stagger:.5,
+    scrollTrigger: {
+      trigger: ".bnfi ul li", 
+      start: "top 80%", 
+      end: "bottom 20%", 
+      toggleActions: "play none none none", 
+    scrub:true
+    }
+},["sm"])
+gsap.from(".bnfi .p2 img",{
+    scale:.5,
+    opacity: 0,
+    delay:.5,
+    duration: 2,
+    scrollTrigger: {
+      trigger: ".wt-we-ex ul li", 
+      start: "top 80%", 
+      end: "bottom 20%", 
+      toggleActions: "play none none none", 
+    }
+},["sm"])
+    </script>
+</body>
+</html>
